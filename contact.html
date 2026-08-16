@@ -68,7 +68,7 @@
 
   <section class="container two-col" style="align-items:start;">
     <div class="form-card">
-      <form id="bookingForm">
+      <form id="bookingForm" novalidate>
         <div class="form-grid">
           <div class="field">
             <label for="name">Full name</label>
@@ -107,9 +107,10 @@
           </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">Request Fixed Quote</button>
+        <p id="formError" class="form-status form-status-error" role="alert" hidden>We couldn't save your request. Please check your connection and try again.</p>
         <p class="form-note">We typically reply by call or WhatsApp within 15 minutes during business hours (6 AM – 11 PM).</p>
       </form>
-      <div id="formSuccess" hidden>
+      <div id="formSuccess" role="status" aria-live="polite" hidden>
         <h3>Thanks — your request is in.</h3>
         <p>Our team will call or WhatsApp you within 15 minutes with a fixed fare quote. For anything urgent, call us directly at <a href="tel:+919876543210">+91 7588291375</a>.</p>
       </div>

@@ -280,6 +280,9 @@ section{ padding:88px 0; }
 .field textarea{ resize:vertical; min-height:110px; }
 .form-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-m); padding:32px; box-shadow:var(--shadow-card); }
 .form-note{ font-size:.8rem; color:var(--ink-soft); margin-top:10px; }
+.form-status{margin:12px 0 0;padding:11px 13px;border-radius:var(--radius-s);font-size:.84rem;font-weight:600}
+.form-status-error{background:#FDEBE6;color:var(--danger)}
+.btn:disabled{cursor:not-allowed;opacity:.65;transform:none}
 
 /* Breadcrumb */
 .breadcrumb{ font-size:.82rem; color:var(--ink-soft); padding:18px 0 0; }
